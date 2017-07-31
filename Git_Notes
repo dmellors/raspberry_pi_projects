@@ -1,0 +1,37 @@
+Git Notes...
+
+- Created repository called raspberry_pi_projects
+
+- Repository URL: https://github.com/dmellors/raspberry_pi_projects.git
+
+- To add a file to local repository: git add filename
+
+- To add all files in current directory to a respository: git add --all
+
+- To see status of current Git repository: git status
+
+- Commit all changes made in the directoru to the local Git repo: git commit -am
+
+- See the commit history of a file: git log filename
+
+- To restore earlier version of a file : git checkout <hashcode taken from step above of desierd version of file> filename
+  Then recommit with: git commit -am 'notes add here'
+
+- To create a new branch of a repository: git checkout -b new-branch-name
+
+- To see all branches in a repository: git branch
+
+- To delete a branch: git branch -D branch-name
+
+- To merge a branch back to the master first you need to make sure all your cahnegs are comitted in the branch: git commit -am
+  Then switch back to the master branch: git checkout master
+  The merge the branch changes o the master:  git merge branch-name
+
+- To upload chnages to Git Hub: create a new repo via the Github Web interfcae/site and note the url associated with the repo for e.g: https://github.com/dmellors/raspberry_pi_projects.git
+  Then ensure you are cd'd into the appropiate local directory (e.g. python_code)
+  Then associate the local project directory with the github url above: git remote add origin https://github.com/dmellors/raspberry_pi_projects.git
+  Upload local files to github for first time with (will be asked for user/pass) with: git push -u origin master
+  Then anytime you need to update the files in the main master branch again use: git push origin master
+  If uploading files from another branch then use the appropiate branch name: git push origin branch-name
+
+
