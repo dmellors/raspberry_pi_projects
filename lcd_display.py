@@ -73,11 +73,11 @@ time.sleep(E_DELAY)
 
 try:
 	while True:
-		lcd_display("Biscuit", "")
+		lcd_display("My Message", "")
 		time.sleep(2.5)
-		lcd_display("Loves his walks", "and gravy bones")
+		lcd_display("Test A", "Test B")
 		time.sleep(2.5)
-		lcd_display("But mostly loves", "Funcle Dan!")
+		lcd_display("Test C", "Test D")
 		time.sleep(2.5)
 except KeyboardInterrupt:
 	GPIO.cleanup()
